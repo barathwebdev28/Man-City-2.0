@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    margin:0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width:3.25rem;
+    height: 3.25rem;
+    object-fit: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color:rgb(152, 197, 233);
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+    
+}
+
+.navbar{
+    display: flex;
+    gap: 2rem;
+    
+}
+.pfp{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    
+}
+.navbar li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgb(0, 24, 56);
+    cursor: pointer;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: rgb(250, 252, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.grid-img{
+    width:100%;
+    max-width: 640px;
+    object-fit: cover;
+    border-radius:0.5rem;
+}
+
+.grid{
+    display: flex;
+    overflow-x: auto;
+    row-gap:1rem;
+    column-gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+
+.container{
+    background-image:url(photos/FrNLyY1XoAEeQ10.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width:100vw;
+    flex-shrink:1;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    margin-top:3rem;
+}
+
+.grid-label,.player-text,.fixture-text{
+    color:rgb(0, 24, 56);
+    font-family: Oswald;
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: bold;
+    padding-left:1rem;
+}
+
+.hero-text-container{
+    padding-left:3px;
+}
+
+.hero-text{
+    font-family: Oswald;
+    font-size:clamp(3rem, 8vw, 6.7rem);
+    color: white;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    line-height:6rem;
+    padding-left:1rem;
+}
+
+.city{
+    font-family: Oswald;
+    font-size:clamp(3rem, 8vw, 6.7rem);
+    font-weight: bold;
+    display: inline;
+    color:rgb(152, 197, 233);
+
+}
+
+.para{
+    font-family: Oswald;
+    font-weight: 400;
+    font-size:1.75rem;
+    margin-left:1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.fix-container{
+    margin-top: 4rem;
+}
+
+
+
+.fix-label{
+    display: flex;
+    padding-left: 3rem;
+    padding:2rem;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 0px 2.45px rgb(0, 24, 56);
+}
+
+
+.fix-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fix-text{
+    color: #6caddf;
+    font-family: Oswald;
+    letter-spacing: -1.75px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.fix-desc{
+    color: gray;
+    letter-spacing: -1px;
+    font-family: Poppins;
+    font-weight: 250;
+    font-size: 1.45rem;
+}
+
+.book{
+    font-size: 1.55rem;
+    padding: 1rem;
+    background-color: #6caddf;
+    color: white;
+    font-family: Oswald;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.book:hover{
+    color: #6caddf ;
+    background-color: white;
+    border-color:  #6caddf;
+    border-style: solid;
+    border-width:1.6px;
+    transition: 0.15s;
+}
+
+.matches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+.match:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.date{
+    color: gray;
+    font-size: 1.25rem;
+}
+
+.vs{
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+}
+.team-logo{
+    width:2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+}
+
+.team{
+    font-size: 1.45rem;
+    font-weight: 400;
+    
+}
+
+.pfp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90%;
+    width:90%;
+    padding: 1rem;
+    
+}
+
+.player-pfp{
+    height:12rem;
+    width:12rem;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.player-grid{
+    display: flex;
+    overflow-x: scroll;
+    padding-left:1rem;
+    padding-right: 1rem;
+    column-gap: 3rem;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    align-items: center;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.player-container:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.grid-text{
+    width:100%;
+    text-align: center;
+    padding: 0;
+    line-height: 1.25rem;
+}
+
+.player-name{
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.player-pos{
+    font-size: 1.25rem;
+    color: gray;
+}
+
+.grid-container{
+    margin-top: 1rem;
+}
+
+@media(max-width:777px){
+    .navbar ul{
+        gap: 2.5rem;
+    }
+
+    .header{
+        width:100%;
+        justify-content:space-between;
+        align-items: flex-start;
+    }
+    .pfp{
+        align-items: flex-start;
+    }
+
+}
+
+@media(max-width:670px){
+   
+
+    .container{
+        min-width: 100vw;
+    }
+    .team,.vs{
+        font-size:1.25rem;
+        
+    }
+    .team-container{
+        gap:1rem;
+    }
+   
+}
+
+@media(max-width:610px){
+    header{
+        justify-content: left;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    .grid-label,.fixture-text,.player-text{
+        font-size: 2.45rem;
+    }
+
+    .fix-text{
+        font-size: 2.25rem;
+    }
+    .fix-desc{
+        font-size: 1.25rem;
+    }
+    .book{
+        font-size: 1.25rem;
+    }
+    
+}
+
+
+
+
+@media(max-width:390px){
+    .city{
+        display: block;
+        padding: 0;
+    }
+    }
+
+@media(max-width:470px){
+    .team,.date{
+        font-size: 0.85rem;
+    }
+    .matches{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        overflow-x: scroll;
+        gap: 2rem;
+    }
+    .match{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
