@@ -309,6 +309,10 @@ header{
     margin-top: 1rem;
 }
 
+.hamburger,.nav-elements-mobile{
+    display: none;
+}
+
 @media(max-width:777px){
     .navbar ul{
         gap: 2.5rem;
@@ -338,16 +342,24 @@ header{
     .team-container{
         gap:1rem;
     }
-   
-}
-
-@media(max-width:610px){
+   .navbar ul{
+        display: none;
+    }
     header{
         justify-content: left;
     }
-    .navbar ul{
-        display: none;
+    .hamburger{
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        right:16px;
+        cursor: pointer;
     }
+}
+
+@media(max-width:610px){
+    
+    
 
     .grid-label,.fixture-text,.player-text{
         font-size: 2.45rem;
