@@ -63,6 +63,13 @@ header{
     transition: all 0.3s ease-in-out;
 }
 
+.grid-label{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    box-shadow:0px 0px 2.45px rgb(0, 24, 56) ;
+    padding: 0.5em;
+}
 
 
 .grid-img{
@@ -80,6 +87,13 @@ header{
     margin-left: 1rem;
     margin-top: 1rem;
     margin-right: 1rem;
+}
+
+p{
+    display: inline;
+    font-size: clamp(0.45rem, 3.5vw, 1rem);
+    color: rgb(0, 0, 0);
+    margin: 0;
 }
 
 
@@ -104,7 +118,7 @@ header{
     color:rgb(0, 24, 56);
     font-family: Oswald;
     margin: 0;
-    font-size: 2.75rem;
+    font-size: clamp(2rem, 6vw, 4.5rem);
     font-weight: bold;
     padding-left:1rem;
 }
@@ -148,8 +162,7 @@ header{
 
 .fix-label{
     display: flex;
-    padding-left: 3rem;
-    padding:2rem;
+    padding:0.5em;
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 0px 2.45px rgb(0, 24, 56);
@@ -169,19 +182,19 @@ header{
     font-family: Oswald;
     letter-spacing: -1.75px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 5vw, 4rem);
 }
 .fix-desc{
     color: gray;
     letter-spacing: -1px;
     font-family: Poppins;
     font-weight: 250;
-    font-size: 1.45rem;
+    font-size: clamp(1rem, 3vw, 3rem);
 }
 
 .book{
-    font-size: 1.55rem;
-    padding: 1rem;
+    font-size:clamp(1rem, 4vw, 4rem);
+    padding: 0.5em;
     background-color: #6caddf;
     color: white;
     font-family: Oswald;
@@ -230,11 +243,11 @@ header{
 
 .date{
     color: gray;
-    font-size: 1.25rem;
+    font-size: clamp(0.85rem, 2vw, 2rem)
 }
 
 .vs{
-    font-size: 2rem;
+    font-size: clamp(.85rem, 2vw, 1.25rem);
     color: rgb(75, 75, 75);
     font-weight: 500;
 }
@@ -245,7 +258,7 @@ header{
 }
 
 .team{
-    font-size: 1.45rem;
+    font-size: clamp(1rem, 3vw, 3rem);
     font-weight: 400;
     
 }
@@ -259,6 +272,7 @@ header{
     padding: 1rem;
     
 }
+
 
 .player-pfp{
     height:12rem;
@@ -289,19 +303,28 @@ header{
     transition: all 0.3s ease-in-out;
 }
 .grid-text{
+    display: flex;
+    flex-direction: column;
     width:100%;
+    gap: 1rem;
     text-align: center;
     padding: 0;
     line-height: 1.25rem;
 }
-
+.players-label{
+    display: flex;
+    padding:0.5em;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 0px 2.45px rgb(0, 24, 56);
+}
 .player-name{
-    font-size: 1.55rem;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 700;
 }
 
 .player-pos{
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 2vw, 1rem);
     color: gray;
 }
 
@@ -335,10 +358,7 @@ header{
     .container{
         min-width: 100vw;
     }
-    .team,.vs{
-        font-size:1.25rem;
-        
-    }
+    
     .team-container{
         gap:1rem;
     }
@@ -357,25 +377,7 @@ header{
     }
 }
 
-@media(max-width:610px){
-    
-    
 
-    .grid-label,.fixture-text,.player-text{
-        font-size: 2.45rem;
-    }
-
-    .fix-text{
-        font-size: 2.25rem;
-    }
-    .fix-desc{
-        font-size: 1.25rem;
-    }
-    .book{
-        font-size: 1.25rem;
-    }
-    
-}
 
 
 
@@ -388,9 +390,7 @@ header{
     }
 
 @media(max-width:470px){
-    .team,.date{
-        font-size: 0.85rem;
-    }
+    
     .matches{
         display: flex;
         flex-direction: row;
